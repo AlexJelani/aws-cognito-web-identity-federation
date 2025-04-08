@@ -16,7 +16,11 @@ This project implements the AWS Cognito Web Identity Federation lab using AWS CD
    ```
    npm install
    ```
-3. Create a Google API Project and OAuth 2.0 Client ID:
+3. Download sample pet images:
+   ```
+   ./scripts/download-pet-images.sh
+   ```
+4. Create a Google API Project and OAuth 2.0 Client ID:
    - Go to the Google Developer Console (https://console.developers.google.com/)
    - Create a new project
    - Enable the Google+ API

@@ -29,6 +29,12 @@ frontend/dist/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Large files
+private-data/private-data/pets/*.jpg
+AWSCLIV2.pkg
+Q
+amazon-q-cli-setup.sh
 AWSCLIV2.pkg
 Q
 amazon-q-cli-setup.sh

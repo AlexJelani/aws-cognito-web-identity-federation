@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Image Application</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Remove the old meta tag and use the new Google Identity Services -->
+</head>
+<body>
+    <div class="app-container">
+        <h1>Pet Image Application</h1>
+        <div id="userInfo">
+            <p>You are not signed in.</p>
+            <!-- Google Sign-In button will be rendered here -->
+            <div id="g_id_onload"
+                 data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                 data-callback="handleCredentialResponse">
+            </div>
+            <div class="g_id_signin" data-type="standard"></div>
+            <div id="signOutContainer" style="display: none; margin-top: 10px;">
+                <button id="signOutButton" onclick="signOut()">Sign Out</button>
+            </div>
+        </div>
+        <div id="petsArea" style="display: none;">
+            <h2>Pet Images</h2>
+            <div id="petsContainer"></div>
+        </div>
+    </div>
+
+    <!-- Add these scripts in order -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1000.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+

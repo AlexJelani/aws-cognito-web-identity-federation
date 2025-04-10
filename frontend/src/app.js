@@ -1,10 +1,16 @@
 // Configuration - These values will be replaced after deployment
+// Auto-generated configuration file - DO NOT EDIT MANUALLY
+// Generated on: 2025-04-08T10:02:55.609Z
+// Auto-generated configuration file - DO NOT EDIT MANUALLY
+// Generated on: 2025-04-08T10:09:00.377Z
 const config = {
-    identityPoolId: 'YOUR_IDENTITY_POOL_ID',
-    googleClientId: 'YOUR_GOOGLE_CLIENT_ID',
-    privateBucketName: 'YOUR_PRIVATE_BUCKET_NAME',
-    region: 'YOUR_REGION'
+    identityPoolId: 'us-east-1:af391233-f192-4753-a5c0-a4dadcdb6c9e',
+    googleClientId: '421640755879-euktob5emj3quro6qit3ohpr54nl58ud.apps.googleusercontent.com',
+    privateBucketName: 'awscognitowebidentityfede-privatedatabucket5d681de-hkhmtpc2gd85',
+    region: 'us-east-1'
 };
+
+
 
 
 
@@ -162,3 +168,19 @@ function loadPetImages() {
 
 // Make the signOut function globally available
 window.signOut = signOut;
+// Initialize Google Sign-In when the page loads
+window.onload = function() {
+    // Initialize Google Sign-In
+    if (google && google.accounts && google.accounts.id) {
+        google.accounts.id.initialize({
+            client_id: config.googleClientId,
+            callback: handleCredentialResponse
+        });
+        google.accounts.id.renderButton(
+            document.querySelector('.g_id_signin'),
+            { theme: 'outline', size: 'large' }
+        );
+    } else {
+        console.error('Google Identity Services not loaded properly');
+    }
+};

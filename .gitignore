@@ -38,3 +38,5 @@ amazon-q-cli-setup.sh
 AWSCLIV2.pkg
 Q
 amazon-q-cli-setup.sh
+diagram/create_architecture_diagram.py
+diagram/create_diagram.py

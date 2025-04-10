@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.npm
+npm-debug.log*
+
+# Build output
+cdk.out/
+.cdk.staging/
+
+# Environment variables and configuration
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+config.json
+**/config.js
+
+# Frontend build
+frontend/dist/
+
+# AWS credentials
+.aws/
+*.pem
+aws.json
+aws-config.json
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

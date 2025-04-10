@@ -4,9 +4,9 @@
 // Auto-generated configuration file - DO NOT EDIT MANUALLY
 // Generated on: 2025-04-08T10:09:00.377Z
 const config = {
-    identityPoolId: 'us-east-1:af391233-f192-4753-a5c0-a4dadcdb6c9e',
-    googleClientId: '421640755879-euktob5emj3quro6qit3ohpr54nl58ud.apps.googleusercontent.com',
-    privateBucketName: 'awscognitowebidentityfede-privatedatabucket5d681de-hkhmtpc2gd85',
+    identityPoolId: process.env.IDENTITY_POOL_ID || '',
+    googleClientId: process.env.GOOGLE_CLIENT_ID || '',
+    privateBucketName: process.env.PRIVATE_BUCKET_NAME || '',
     region: 'us-east-1'
 };
 
